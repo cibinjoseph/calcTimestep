@@ -9,6 +9,13 @@ window = tkinter.Tk()
 window.title('calcTimestep')
 window.geometry('400x300')
 
+# Centre window to screen
+windowWidth = window.winfo_reqwidth()
+windowHeight = window.winfo_reqheight()
+positionRight = int(window.winfo_screenwidth()/2 - windowWidth/2)-50
+positionDown = int(window.winfo_screenheight()/2 - windowHeight/2)-50
+window.geometry('+{}+{}'.format(positionRight, positionDown))
+
 rpmText = tkinter.Label(window, text='RPM', font=allFont, padx=10, pady=5)
 rpmText.grid(row=0, sticky='w')
 rpmEntry = tkinter.Entry(window, width=10, font=allFont)
