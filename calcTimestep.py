@@ -81,7 +81,7 @@ omegaEntry.config(state='disabled')
 timestepText = tkinter.Label(window, text='Timestep length (s)', font=allFont, padx=10, pady=5)
 timestepText.grid(row=5)
 timestepEntry = tkinter.Entry(window, width=10, font=allFont)
-timestepEntry.insert(0, '0.0028')
+timestepEntry.insert(0, '0.001388')
 timestepEntry.grid(row=5, column=1)
 timestepEntry.config(state='disabled')
 
