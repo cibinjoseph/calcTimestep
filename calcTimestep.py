@@ -52,7 +52,7 @@ def clicked():
         nrev = float(nrevEntry.get())
 
     omegaRPS = 2.0*math.pi*rpm/60.0;
-    timestep = (2.0*dDeg*math.pi)/(omegaRPS*180.0)
+    timestep = (2.0*dDeg*math.pi)/(omegaRPS*360.0)
     ntimesteps = nrev*360.0/dDeg
 
     omegaEntry.config(state='normal')
